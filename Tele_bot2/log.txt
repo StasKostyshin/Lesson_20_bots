@@ -1,0 +1,96 @@
+executor.py [Line:362] #INFO     [2023-05-09 13:35:06,353] Bot: stas_bot2 [@stasinline_bot]
+executor.py [Line:358] #WARNING  [2023-05-09 13:35:06,443] Updates were skipped successfully.
+dispatcher.py [Line:358] #INFO     [2023-05-09 13:35:06,443] Start polling.
+dispatcher.py [Line:433] #INFO     [2023-05-09 13:35:25,497] Stop polling...
+executor.py [Line:329] #WARNING  [2023-05-09 13:35:25,498] Goodbye!
+executor.py [Line:362] #INFO     [2023-05-09 13:39:56,188] Bot: stas_bot2 [@stasinline_bot]
+executor.py [Line:358] #WARNING  [2023-05-09 13:39:56,295] Updates were skipped successfully.
+dispatcher.py [Line:358] #INFO     [2023-05-09 13:39:56,296] Start polling.
+dispatcher.py [Line:433] #INFO     [2023-05-09 15:20:15,112] Stop polling...
+executor.py [Line:329] #WARNING  [2023-05-09 15:20:15,114] Goodbye!
+executor.py [Line:362] #INFO     [2023-05-09 15:20:22,160] Bot: stas_bot2 [@stasinline_bot]
+executor.py [Line:358] #WARNING  [2023-05-09 15:20:22,264] Updates were skipped successfully.
+dispatcher.py [Line:358] #INFO     [2023-05-09 15:20:22,265] Start polling.
+base_events.py [Line:1771] #ERROR    [2023-05-09 15:20:32,433] Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\dizba\PycharmProjects\Lesson 20 bots\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=NameError("name 'media' is not defined")>
+Traceback (most recent call last):
+  File "C:\Users\dizba\PycharmProjects\Lesson 20 bots\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dizba\PycharmProjects\Lesson 20 bots\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dizba\PycharmProjects\Lesson 20 bots\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dizba\PycharmProjects\Lesson 20 bots\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dizba\PycharmProjects\Lesson 20 bots\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dizba\PycharmProjects\Lesson 20 bots\Tele_bot2\bot_inline.py", line 48, in info
+    await bot.send_media_group(message.chat.id, media=media)
+                                                      ^^^^^
+NameError: name 'media' is not defined
+base_events.py [Line:1771] #ERROR    [2023-05-09 15:20:43,853] Task exception was never retrieved
+future: <Task finished name='Task-25' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\dizba\PycharmProjects\Lesson 20 bots\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=NameError("name 'media' is not defined")>
+Traceback (most recent call last):
+  File "C:\Users\dizba\PycharmProjects\Lesson 20 bots\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dizba\PycharmProjects\Lesson 20 bots\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dizba\PycharmProjects\Lesson 20 bots\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dizba\PycharmProjects\Lesson 20 bots\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dizba\PycharmProjects\Lesson 20 bots\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dizba\PycharmProjects\Lesson 20 bots\Tele_bot2\bot_inline.py", line 48, in info
+    await bot.send_media_group(message.chat.id, media=media)
+                                                      ^^^^^
+NameError: name 'media' is not defined
+base_events.py [Line:1771] #ERROR    [2023-05-09 15:20:49,624] Task exception was never retrieved
+future: <Task finished name='Task-29' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\dizba\PycharmProjects\Lesson 20 bots\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=NameError("name 'media' is not defined")>
+Traceback (most recent call last):
+  File "C:\Users\dizba\PycharmProjects\Lesson 20 bots\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dizba\PycharmProjects\Lesson 20 bots\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dizba\PycharmProjects\Lesson 20 bots\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dizba\PycharmProjects\Lesson 20 bots\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dizba\PycharmProjects\Lesson 20 bots\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dizba\PycharmProjects\Lesson 20 bots\Tele_bot2\bot_inline.py", line 48, in info
+    await bot.send_media_group(message.chat.id, media=media)
+                                                      ^^^^^
+NameError: name 'media' is not defined
+dispatcher.py [Line:433] #INFO     [2023-05-09 15:24:10,723] Stop polling...
+executor.py [Line:329] #WARNING  [2023-05-09 15:24:10,724] Goodbye!
+executor.py [Line:362] #INFO     [2023-05-09 15:26:29,035] Bot: stas_bot2 [@stasinline_bot]
+executor.py [Line:358] #WARNING  [2023-05-09 15:26:29,123] Updates were skipped successfully.
+dispatcher.py [Line:358] #INFO     [2023-05-09 15:26:29,123] Start polling.
+dispatcher.py [Line:433] #INFO     [2023-05-09 15:31:44,352] Stop polling...
+executor.py [Line:329] #WARNING  [2023-05-09 15:31:44,353] Goodbye!
+executor.py [Line:362] #INFO     [2023-05-09 15:32:13,284] Bot: stas_bot2 [@stasinline_bot]
+executor.py [Line:358] #WARNING  [2023-05-09 15:32:13,391] Updates were skipped successfully.
+dispatcher.py [Line:358] #INFO     [2023-05-09 15:32:13,391] Start polling.
+dispatcher.py [Line:433] #INFO     [2023-05-09 15:32:14,747] Stop polling...
+executor.py [Line:329] #WARNING  [2023-05-09 15:32:14,747] Goodbye!
+executor.py [Line:362] #INFO     [2023-05-09 15:32:20,165] Bot: stas_bot2 [@stasinline_bot]
+executor.py [Line:358] #WARNING  [2023-05-09 15:32:20,261] Updates were skipped successfully.
+dispatcher.py [Line:358] #INFO     [2023-05-09 15:32:20,262] Start polling.
+dispatcher.py [Line:433] #INFO     [2023-05-09 15:37:14,620] Stop polling...
+executor.py [Line:329] #WARNING  [2023-05-09 15:37:14,621] Goodbye!
